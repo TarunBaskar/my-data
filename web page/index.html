@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <style>
+body{
+    background-color: rgb(14, 14, 14);
+    animation: mymove 5s infinite;
+}
+
+
+@keyframes mymove {
+  from {background-color: rgb(85, 44, 44);}
+  to {background-color: rgb(18, 18, 18);}
+}
+.top{
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(204, 204, 194);
+  /* background-image: url(''); */
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+.imag{
+    flex: 1;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+}
+ul{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+a:hover{
+    color: rgb(0, 162, 255) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.menu{
+    padding-top: 20px;
+}
+/* .image{
+    box-shadow: rgba(251, 251, 251, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0) 0px 30px 60px -30px, rgba(253, 253, 253, 0.35) 0px -2px 6px 0px inset;
+    
+} */
+/* td{
+    padding: 7px;
+} */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  /* margin-top:  ; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #fd4507;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f31d0d;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  color: #f1f1f1;
+}
+
+img.avatar {
+  
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  background-color: rgb(217, 252, 15);
+  text-align: left;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.bottom{
+    border: 5px outset white;
+      /* padding-left: 500px;
+    padding-right: 500px;   */
+    float: center;
+    padding-bottom: 50px;
+    width: 50%;
+    /* float: right; */
+}
+.about{
+    color: aliceblue;
+}
+.achive{
+    color: aliceblue;
+}
+.contact{
+    color: aliceblue;
+}
+.move{
+  width: 500px;
+  height: 200px;
+  background-image:url('https://goldeneraeducation.com/wp-content/uploads/2020/09/SKCET.jpg');
+  position: relative;
+  animation: mymove 30s infinite;
+  opacity: 0.2;
+}
+@keyframes mymove {
+  /* 0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;} */
+  from{top:100px;}
+  to{top:4500px;}
+}
+    </style>
+</head>
+<body>
+  
+    <div class="top">
+        <div class="imag">
+        <img src="https://goldeneraeducation.com/wp-content/uploads/2020/09/SKCET.jpg" alt="skcetimg" height="80">
+    </div>
+        <div class="menu">
+        <ul>
+            <li><a href="#homepage">HOME</a></li>
+            <li><a href="#aboutskcet">ABOUT</a></li>
+            <li><a href="#achivements">ACHIVEMENTS</a></li>
+            <li><a href="#con">CONTACT</a></li>
+            
+        </ul>
+        </div>
+    </div>
+</center>
+
+<center>
+  <center><div class="move"></div></center>
+  <div class="bottom" style="width: 500px;">
+        <br>
+        <!-- <div class="image">
+        <center>
+        <img src="https://images.shiksha.com/mediadata/images/1550490587php7iX2A7.png" alt="skcetclg" >
+        </center>
+    </div> -->
+    
+    <h2 style="color: white;" id="homepage">Login Form</h2>
+
+
+<form action="#aboutskcet">
+  <div class="imgcontainer">
+    <img src="data:image/png;base64,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" alt="Avatar" class="avatar" heigth="10">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1; text-align: left;">
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+    </div>
+</center><br><br>
+<center>
+<div class="about" style="border: 5px outset white; padding-top:100px;padding-bottom:100px;width: 500px;">
+    <h2 id="aboutskcet">About SKCET</h2><br><br>
+<h3>The Knowledge Hub</h3><br><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOA04a1nVYns8GYX1y053AOO9it44rjGt3aw&usqp=CAU" alt="khub" ><br><br>
+SKCET excels in its various efforts towards achievement of academic goals. <br>
+It is one of the 28 prestigious nodal centers across India chosen by MHRD to host ‘Smart India Hackathon’ for three consecutive times.<br>
+ 4 teams from SKCET have won first prize in Smart India Hackathon held across the Nation during March 2019. <br>
+ Our students have secured prizes and internships from Google, Cloud bull, BITS Pilani SIH, etc. <br>
+ Our Institution is rated with ‘AA’ NPTEL examinations 2019 and bagged 11th position in national level and first rank among the colleges in Coimbatore region which reveals the academic excellence of its students. <br>
+ SKCET is selected as the Nodal Centre to conduct the NPTEL examinations in accordance with the MoU signed with TCS - EON.<br>
+<br>
+ <h3>A Pioneer</h3><br>
+ <img src="data:image/png;base64,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"><br><br>
+SKCET has been identified by NAAC to mentor 10 non - accredited Institutions in our geographic vicinity to support its goal of accrediting all colleges in India by 2022.<br> The Institution is one among top 150 engineering colleges in National Level in MHRD - NIRF Ranking 2018. <br>SKCET has been chosen as the nodal centre by IIT Bombay for spoken tutorial project of MHRD and one among 8 partner Institutions of AICTE across the Nation for FDP programs.<br><br>
+
+<h3>Illuminating Careers</h3><br>
+<img src="data:image/jpeg;base64,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"><br><br>
+The Institution also has an exemplary record of Students Placements. <br>The Training & Placement cell of SKCET plays a pivotal role in counselling and guiding the students for successful placements from top notch Companies. <br>In 2019, as a result of customized training based on the career choice of students, 573 students were able to get 711 job offers in 248 companies including Multinational Core and IT Product based companies with 28 LPA as the highest package with Average Package of 3.92 LPA.<br><br>
+</div>
+</center><br><br>
+<center>
+<div class="achive" style="border: 5px outset white; padding-top:100px;padding-bottom:100px;width: 500px;">
+    <h2 id="achivements">Achivements</h2><br>
+    <h3>Year - 2022</h3><br>
+
+Ranked <b>73rd in NIRF Ranking 2022 </b>under Engineering Category.<br>
+
+Achieved All-India 4th rank in ARIIA Ranking.<br>
+
+Proud recipient of Academic Partner Excellence Awards 2022, for training Highest Number of Students through ICT Academy.<br>
+
+Certificate of Appreciation by Bhumi Campus Awards 2022, for our efforts towards developing Unique Social Initiatives Bhumi.<br><br>
+
+
+<h3>Year - 2021</h3><br>
+
+Ranked 78th in NIRF Ranking 2021 under Engineering Category.<br>
+
+Achieved All-India 2nd rank in ARIIA Ranking 2020.<br>
+
+Recognized as the Top 5th Private Engineering College with best value for money in India Today MRDA Rankings 2021.<br>
+
+Conferred with the National Rank in AICTE- Clean and Smart Campus 2020. Also ranked second in the Clean & Smart Campus: 2019 awards instituted by Swachh Bharat Mission Council.<br>
+
+Conferred with National Third Rank in Utkrisht Sansthan Vishwakarma Award (USVA) 2019. Secured the 2nd runner-up prize in the prestigious AICTE- Lilavati award, under the Ministry of Education (MoE) for the sub-category Sanitation and Hygiene.<br>
+
+Proud recipient of Learnathon Awards 2020, for training our students in Industry 4.0 courses by ICT Academy.<br>
+
+SKCET Received ‘Best CoE partner award 2021’ by Virtusa for second year in a row for Full -stack Java domain.<br>
+
+SKCET bestowed with certification of appreciation for Maximum number of student participation in ‘Capgemini Tech challenge 2021’, for the second consecutive time.<br>
+
+SKCET was Conferred with “Best Hiring Partner 2021” award by Informatica for outstanding performance in internship by the SKCET students.<br>
+
+SKCET received “Best Campus Partner college 2021” from Kovai.co for the stellar performance of SKCET students.<br>
+
+Chosen as a prestigious nodal center to host the software edition of Toycathon 2021 -Virtual Mode.<br>
+<br>
+<h3>Year 2018</h3><br>
+
+Acquired 2nd Rank in National Level SWACHH Campus.<br>
+
+Secured 13th Rank at National Level in NPTEL.<br>
+
+The college was one among 28 Nodal Centres across India for AICTE – Smart India Hackathon and one among 8 Institutes for live video session.<br>
+
+Final Year Civil Engineering with CSE students won Persistent Systems Inspiration Award with a cash prize of Rs.10, 000/- under the Ministry of Water Resources, Ganga River Development and Rejuvenation<br>
+
+
+
+
+
+</div>
+</center><br><br>
+<center>
+<div class="contact" style="border: 5px outset white; padding-top:100px;padding-bottom:100px;width: 500px;">
+  <img src="https://goldeneraeducation.com/wp-content/uploads/2020/09/SKCET.jpg" alt="skcet" height="70"><br>
+    <h2 id="con">Contact</h2>
+    <br><br>
+    <p >
+    Kuniamuthur<br>
+Coimbatore<br>
+TamilNadu - 641008<br>
+Phone: 0422-2678001(7 Lines)<br>
+FAX: 0422-2678012<br>
+MAIL: principal@skcet.ac.in placement@skcet.ac.in<br></p><br>
+LOCATION:<br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15669.421280271737!2d76.94750718637015!3d10.936509376017321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85bb22369d571%3A0x72cc0bed93b5b2b6!2sSri%20Krishna%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1667359757408!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</center>
+</body>
+</html>
